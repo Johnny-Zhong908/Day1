@@ -37,7 +37,23 @@ public class MultiplicationTableBuilder {
         prerequisite=isTrueInitialComparison&DigitalRangeDetection;
         return prerequisite;
     }
+    public StringBuilder CalculateTheOutputMultiplicationLine(int start,int end,boolean prerequisite) {
+        StringBuilder sb;
+        if (!prerequisite) {
+            return null;
+        } else {
+            sb = new StringBuilder();
+            for (int i = start; i <= end; i++) {
+                for (int j = start; j <= i; j++) {
+                    int s = j * i;
+                    sb.append(j).append("*").append(i).append("=").append(s).append(" ");
+                }
+                sb.append("\n");
+            }
 
+        }
+        return sb;
+    }
 
 
 }
