@@ -12,7 +12,7 @@ public class MultiplicationTableBuilder {
     public String GenerateMultiplicationTable(int start, int end) {
         return "";
     }
-
+    
 
 
 
