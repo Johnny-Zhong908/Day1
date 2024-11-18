@@ -12,14 +12,7 @@ public class MultiplicationTableBuilder {
     public String GenerateMultiplicationTable(int start, int end) {
         return "";
     }
-    public boolean ComparisonOfInitialNumbers(int start,int end){
-        boolean isTrueInitialComparison=false;
-        if(start<=end){
-            isTrueInitialComparison=true;
-            return isTrueInitialComparison;
-        }
-        return isTrueInitialComparison;
-    }
+
 
 
 
