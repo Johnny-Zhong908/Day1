@@ -2,18 +2,14 @@ public class MultiplicationTableBuilder {
 
     public static void main(String[] args) {
         MultiplicationTableBuilder builder = new MultiplicationTableBuilder();
-        int StartNumber = 2;
-        int EndNumber = 4;
-        String multiplicationTable = builder.GenerateMultiplicationTable(StartNumber, EndNumber);
+        int start = 2;
+        int end = 4;
+        String multiplicationTable = builder.build(start, end);
 
         System.out.println(multiplicationTable);
     }
 
-    public String GenerateMultiplicationTable(int start, int end) {
+    public String build(int start, int end) {
         return "";
     }
-    
-
-
-
 }
