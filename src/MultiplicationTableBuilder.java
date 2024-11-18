@@ -50,7 +50,10 @@ public class MultiplicationTableBuilder {
             for (int i = start; i <= end; i++) {
                 for (int j = start; j <= i; j++) {
                     int s = j * i;
-                    sb.append(j).append("*").append(i).append("=").append(s).append(" ");
+                    sb.append(j).append("*").append(i).append("=").append(s);
+                    if(i!=j){
+                        sb.append(" ");
+                    }
                 }
                 sb.append("\n");
             }
