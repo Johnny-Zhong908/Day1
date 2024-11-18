@@ -8,6 +8,7 @@ public class MultiplicationTableBuilder {
         System.out.println(multiplicationTable);
     }
 
+
     public String build(int start, int end) {
         boolean comparison=ComparisonOfInitialNumbers(start,end);
         boolean Digital=DigitalRangeDetection(start,end);
