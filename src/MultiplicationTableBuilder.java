@@ -19,5 +19,25 @@ public class MultiplicationTableBuilder {
         }
         return isTrueInitialComparison;
     }
+    public boolean DigitalRangeDetection(int start,int end){
+        boolean isTrueRange=false;
+        if(start<=1000&&start>=1){
+            if(end<=1000&&end>=1){
+                isTrueRange=true;
+                return isTrueRange;
+            }
+            else {
+                return isTrueRange;
+            }
+        }
+        return isTrueRange;
+    }
+    public boolean PrerequisiteJudgment(boolean isTrueInitialComparison,boolean DigitalRangeDetection){
+        boolean prerequisite=false;
+        prerequisite=isTrueInitialComparison&DigitalRangeDetection;
+        return prerequisite;
+    }
+
+
 
 }
