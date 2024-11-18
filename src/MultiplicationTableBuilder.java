@@ -9,7 +9,10 @@ public class MultiplicationTableBuilder {
     }
 
     public String build(int start, int end) {
-        return "";
+        boolean comparison=ComparisonOfInitialNumbers(start,end);
+        boolean Digital=DigitalRangeDetection(start,end);
+        boolean pre=PrerequisiteJudgment(comparison,Digital);
+        return CalculateTheOutputMultiplicationLine(start,end,pre);
     }
     public boolean ComparisonOfInitialNumbers(int start,int end){
         boolean isTrueInitialComparison=false;
@@ -37,7 +40,7 @@ public class MultiplicationTableBuilder {
         prerequisite=isTrueInitialComparison&DigitalRangeDetection;
         return prerequisite;
     }
-    public StringBuilder CalculateTheOutputMultiplicationLine(int start,int end,boolean prerequisite) {
+    public String CalculateTheOutputMultiplicationLine(int start,int end,boolean prerequisite) {
         StringBuilder sb;
         if (!prerequisite) {
             return null;
@@ -52,7 +55,7 @@ public class MultiplicationTableBuilder {
             }
 
         }
-        return sb;
+        return sb.toString();
     }
 
 
